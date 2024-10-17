@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#navbar {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 80px;
+
+}
+
+#menu-phone {
+	position: absolute;
+	left: 10vh;
+	font-weight: bold;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+#menu-desktop {
+	width: 100vw;
+	height: 40px;
+	border-top: 1px solid rgb(233, 233, 233);
+	border-bottom: 1px solid rgb(233, 233, 233);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-item-container {
+	height: 100%;
+	width: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: small;
+}
+
+.menu-item-desktop {
+	margin: 1px;
+	padding: 6px;
+	display: flex;
+	justify-content: center;
+	text-wrap: nowrap;
+	height: 100%;
+	align-items: center;
+	cursor: pointer;
+
+}
+
+#search-bar {
+	padding: 10px;
+	margin-left: 2vw ;
+	width: 5%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	align-items: center;
+	position: absolute;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	left: 0;
+	height: 60%;
+}
+
+.letras {
+	display: flex;
+	width: 30%;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 10px;
+}
+
+.letra {
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.letra p {
+	padding: 22%;
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+	
+}
