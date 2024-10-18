@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+	box-sizing: border-box;
 }
 
 #navbar {
@@ -12,21 +12,27 @@
 	justify-content: center;
 	position: relative;
 	height: 80px;
+	border-bottom: 1px solid rgb(233, 233, 233);
 
 }
 
 #menu-phone {
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	left: 10vh;
-	font-weight: bold;
+	left: 10px;
 	font-size: 50px;
 	cursor: pointer;
+	align-items: center;
+}
+
+#menu-phone p {
+	padding-bottom: 10px;
 }
 
 #menu-desktop {
 	width: 100vw;
 	height: 40px;
-	border-top: 1px solid rgb(233, 233, 233);
 	border-bottom: 1px solid rgb(233, 233, 233);
 	display: flex;
 	justify-content: center;
@@ -44,7 +50,7 @@
 
 .menu-item-desktop {
 	margin: 1px;
-	padding: 6px;
+	padding: 0px 6px 0px 6px;
 	display: flex;
 	justify-content: center;
 	text-wrap: nowrap;
@@ -54,20 +60,26 @@
 
 }
 
+.menu-selected {
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid black;
+}
+
+.menu-item-desktop:hover {
+	background-color: rgb(214, 214, 214);
+}
+
 #search-bar {
-	padding: 10px;
-	margin-left: 2vw ;
-	width: 5%;
+	margin-left: 10px ;
+	left: 0;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	gap: 5px;
 	align-items: center;
 	position: absolute;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: bold;
-	left: 0;
-	height: 60%;
+	height: 100%;
 }
 
 .letras {
@@ -96,4 +108,21 @@
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 30px;
 	
+}
+
+@media screen and (max-width: 768px) {
+	
+	#menu-desktop {
+		display: none;
+		visibility: hidden;
+	}
+
+	#menu-phone {
+		display: flex;
+		visibility: visible;
+	}
+
+	#search-bar {
+		left: 45px;
+	}
 }
