@@ -96,154 +96,108 @@
 
 
 	</div>
-	<template>
-		<li>
-			<div class="flex flex-col items-center card">
-				<img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
-				<div class="flex flex-col justify-between">
-					<h5 class="item-title">
-						<a href="article.html?id={id}">
-							{value}
-						</a>
-					</h5>
-					<p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far,
-						in
-						reverse chronological order.
-					</p>
-					<relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
-				</div>
-			</div>
-		</li>
-	</template>
-	<div class="grid-container">
-		<div class="grid-item text-left">
-			<img />
+	<custom-search>
+  <dialog>
+    <button class="close-btn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
+
+    <template>
+      <li>
+        <div class="list-item card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+          <div class="list-text">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+	
+	<div class="article-grid">
+		<div class="article-item">
+			<img src="imgs/article-tax.jpg" />
 			<h1 class="title">
-				<a href="article.html?id=1">Climate Activists Push for Carbon Tax With Measure GG, But Critics Warn it
-					Could
-					Backfire</a>
+				<a href="article.html?id=1">Climate Activists Push for Carbon Tax With Measure GG, But Critics Warn it Could Backfire</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.
-			</p>
+			<p class="description">Grassroots activists rally for carbon tax reform in Berkeley, facing pushback from political and economic circles.</p>
+			<relative-time time="Wed Oct 18 2024 14:12:41 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/article-musk.webp"/>
 			<h1 class="title">
 				<a href="article.html?id=2">Musk’s empire risks being targeted by EU for potential X fines</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">EU regulators consider extending fines across Musk’s various ventures, raising debate on multinational oversight.</p>
+			<relative-time time="Tue Oct 15 2024 10:42:23 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/omoda.webp"/>
 			<h1 class="title">
 				<a href="article.html?id=3">Omoda E5 in Noble trim - pictures</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">First look at the sleek Omoda E5 SUV as it rolls through UK streets, drawing attention to its electric potential.</p>
+			<relative-time time="Mon Oct 14 2024 08:15:35 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/trump-harris.webp"/>
 			<h1 class="title">
-				<a href="article.html?id=1">Lorem title</a>
+				<a href="article.html?id=4">Harris prepares for closing argument as Trump defends New York rally 'love fest'</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">Political tensions rise as Vice President Harris challenges former President Trump’s recent rally statements.</p>
+			<relative-time time="Sun Oct 13 2024 16:54:10 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/doner.webp"/>
 			<h1 class="title">
-				<a href="article.html?id=1">Lorem title</a>
+				<a href="article.html?id=5">The döner kebab feud that has the world talking</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">A century-old culinary dispute over the origins of döner kebab stirs up heated debate in the Middle East and Europe.</p>
+			<relative-time time="Sat Oct 12 2024 12:00:45 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/gaza.webp"/>
 			<h1 class="title">
-				<a href="article.html?id=1">Lorem title</a>
+				<a href="article.html?id=6">At least 93 killed and missing in Israeli strike on Gaza, health ministry says</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">Escalating conflict leaves dozens dead, sparking international calls for a ceasefire and peace negotiations.</p>
+			<relative-time time="Fri Oct 11 2024 09:40:23 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/chopin.webp"/>
 			<h1 class="title">
-				<a href="article.html?id=1">Lorem title</a>
+				<a href="article.html?id=7">Lost Chopin waltz unearthed after almost 200 years</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">An unpublished Chopin waltz is discovered, delighting music historians and classical enthusiasts worldwide.</p>
+			<relative-time time="Thu Oct 10 2024 17:22:11 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/trees.webp"/>
 			<h1 class="title">
-				<a href="article.html?id=1">Lorem title</a>
+				<a href="article.html?id=8">Alarm call as world's trees slide towards extinction</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">Scientists report an alarming decline in global tree species, raising concerns about biodiversity and climate resilience.</p>
+			<relative-time time="Wed Oct 09 2024 14:07:52 GMT+0200" class="time"></relative-time>
 		</div>
-		<div class="grid-item text-left">
-			<img />
+		<div class="article-item">
+			<img src="imgs/mexico.webp"/>
 			<h1 class="title">
-				<a href="article.html?id=1">Lorem title</a>
+				<a href="article.html?id=9">PhD student finds lost city in Mexico jungle by accident</a>
 			</h1>
-			<p class="description">Lorem San Francisco Chiba Kowloon otaku silent fetishism monofilament girl marketing
-				man
-				courier denim hacker wristwatch rebar. Cartel range-rover meta-assault corrupted numinous tube augmented
-				reality.
-				3D-printed boat sub-orbital wonton soup corporation bicycle franchise. Tower dolphin 8-bit drone
-				physical
-				order-flow garage girl denim crypto-savant vinyl. DIY wristwatch office physical dissident BASE jump
-				computer.</p>
+			<p class="description">A student’s expedition leads to the rediscovery of an ancient city buried for centuries in Mexico's dense jungles.</p>
+			<relative-time time="Tue Oct 08 2024 10:50:16 GMT+0200" class="time"></relative-time>
 		</div>
 	</div>
 	<script src="script.js"></script>

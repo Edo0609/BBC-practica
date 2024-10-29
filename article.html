@@ -30,12 +30,12 @@
 	<div id="menu-desktop">
 		<div id="menu-item-container">
 			<div class="menu-item-desktop menu-selected">
-				<p>Home</p>
+				<p><a href="index.html">Home</a></p>
 			</div>
 			<div class="menu-item-desktop">
 				<p>News</p>
 			</div>
-			<div class="menu-item-desktop">
+			<div class="menu-item-desktop" >
 				<p>US Election</p>
 			</div>
 			<div class="menu-item-desktop">
@@ -96,29 +96,39 @@
 
 
 	</div>
-	<template>
-		<li>
-			<div class="flex flex-col items-center card">
+	<custom-search>
+		<dialog>
+		  <button class="close-btn">🗙</button>
+		  <h1>Search</h1>
+		  <input type="search" id="site-search" name="q" />
+	  
+		  <template>
+			<li>
+			  <div class="list-item card">
 				<img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
-				<div class="flex flex-col justify-between">
-					<h5 class="item-title">
-						<a href="article.html?id={id}">
-							{value}
-						</a>
-					</h5>
-					<p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far,
-						in
-						reverse chronological order.
-					</p>
-					<relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+				<div class="list-text">
+				  <h5 class="item-title">
+					<a href="article.html?id={id}">
+					  {value}
+					</a>
+				  </h5>
+				  <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+					reverse chronological order.
+				  </p>
+				  <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
 				</div>
-			</div>
-		</li>
-	</template>
+			  </div>
+			</li>
+		  </template>
+	  
+		  <ul id="search-results">
+		  </ul>
+		</dialog>
+	  </custom-search>
 
 	<main>
 		<custom-article>
-		  <article class="block">
+		  <article class="custom">
 			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h1>
 			<relative-time time="1729250766363"></relative-time>
 			<img src="https://placehold.co/768x400/EEE/31343C">
