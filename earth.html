@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BBC Practica</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div id="navbar">
+		<div id="menu-phone-button" hidden><img src="imgs/menu.svg" alt="menu"></div>
+		<div id="search-bar">
+			<img src="imgs/magnifying-glass-svgrepo-com.svg" height="30%" alt="glass">
+		</div>
+		<div class="letras">
+			<div class="letra">
+				<p>E</p>
+			</div>
+			<div class="letra">
+				<p>D</p>
+			</div>
+			<div class="letra">
+				<p>U</p>
+			</div>
+		</div>
+	</div>
+	<div id="menu-desktop">
+		<div id="menu-item-container">
+			<div class="menu-item-desktop">
+				<p><a href="index.html">Home</a></p>
+			</div>
+			<div class="menu-item-desktop">
+				<p><a href="news.html">News</a></p>
+			</div>
+			<div class="menu-item-desktop" >
+				<p><a href="elections.html">US Election</a></p>
+			</div>
+			<div class="menu-item-desktop">
+				<p><a href="sport.html">Sport</a></p>
+			</div>
+			<div class="menu-item-desktop">
+				<p><a href="business.html">Business</a></p>
+			</div>
+			<div class="menu-item-desktop">
+				<p><a href="innovation.html">Innovation</a></p>
+			</div>
+			<div class="menu-item-desktop">
+				<p><a href="culture.html">Culture</a></p>
+			</div>
+			<div class="menu-item-desktop">
+				<p><a href="arts.html">Arts</a></p>
+			</div>
+			<div class="menu-item-desktop">
+				<p><a href="travel.html">Travel</a></p>
+			</div>
+			<div class="menu-item-desktop menu-selected">
+				<p><a href="earth.html">Earth</a></p>
+			</div>
+		</div>
+	</div>
+	<div id="menu-phone" hidden>
+		<div class="menu-item-phone">
+			<p><a href="index.html">Home</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="news.html">News</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="elections.html">US Election</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="sport.html">Sport</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="business.html">Business</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="innovation.html">Innovation</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="culture.html">Culture</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="arts.html">Arts</a></p>
+		</div>
+		<div class="menu-item-phone">
+			<p><a href="travel.html">Travel</a></p>
+		</div>
+		<div class="menu-item-phone menu-selected">
+			<p><a href="earth.html">Earth</a></p>
+		</div>
+	</div>
+
+	</div>
+	<custom-search>
+  <dialog hidden>
+    <button class="close-btn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
+
+    <template>
+      <li>
+        <div class="list-item card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+          <div class="list-text">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+	
+	<div class="article-grid">
+		<div class="article-item">
+			<img src="imgs/article-tax.jpg" />
+			<h1 class="title">
+				<a href="article.html?id=1">Climate Activists Push for Carbon Tax With Measure GG, But Critics Warn it Could Backfire</a>
+			</h1>
+			<p class="description">Grassroots activists rally for carbon tax reform in Berkeley, facing pushback from political and economic circles.</p>
+			<relative-time time="Wed Oct 18 2024 14:12:41 GMT+0200" class="time"></relative-time>
+		</div>
+		<div class="article-item">
+			<img src="imgs/trees.webp"/>
+			<h1 class="title">
+				<a href="article.html?id=8">Alarm call as world's trees slide towards extinction</a>
+			</h1>
+			<p class="description">Scientists report an alarming decline in global tree species, raising concerns about biodiversity and climate resilience.</p>
+			<relative-time time="Wed Oct 09 2024 14:07:52 GMT+0200" class="time"></relative-time>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

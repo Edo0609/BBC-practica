@@ -7,6 +7,7 @@
 
 body {
 	overflow-x: hidden;
+	height: auto;
 }
 
 #navbar {
@@ -59,9 +60,15 @@ body {
 .menu-item-desktop {
 	margin: 1px;
 	padding: 0px 6px 0px 6px;
-	a {
+	p, a {
 		text-decoration: none;
 		color: black;
+			display: block;
+			line-height: normal;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
 	}
 	display: flex;
 	justify-content: center;
@@ -135,22 +142,26 @@ body {
 .article-grid {
 	display: grid;
 	width: 100%;
+	height: auto;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 30px;
+	grid-gap: 80px 30px;
 	padding: 20px 100px 100px 100px;
 	transition: 0.3s;
+	justify-content: center;
+
 }
 
 .article-item {
 	width: 100%;
 	transition: 0.3s;
+	margin-bottom: 40px;
 }
 
 .article-item img {
 	width: 100%;
 	height: 60%;
 	transition: 0.3s;
-	border-radius: 20px;
+	border-radius: 8px;
 	object-fit: cover;
 }
 
@@ -162,6 +173,15 @@ body {
 .title a {
 	text-decoration: none;
 	color: black;
+	width: 100%;
+	height: 100%;
+}
+
+.title p {
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	height: 100%;
 }
 
 .article-item:hover {
@@ -205,8 +225,6 @@ body {
 
 custom-search dialog{
 	width: 50%;
-	visibility: hidden;
-	display: flex;
 	justify-self: center;
 	align-self: center;
 	flex-direction: column;
@@ -222,9 +240,11 @@ custom-search dialog{
 
 	input {
 		width: 50%;
+		margin: auto;
 		padding: 10px;
 		border-radius: 50px;
 		margin-bottom: 50px;
+		display: block;
 	}
 
 	ul {
@@ -324,6 +344,18 @@ custom-search dialog{
 		height: 10vh;
 		display: flex;
 		align-items: center;
+
+		p, a {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+			display: block;
+			line-height: normal;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
 	}
 
 }
