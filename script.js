@@ -194,9 +194,11 @@ const articles = [
 	  const dialog = this.querySelector('dialog');
   
 	  dialogBtn.addEventListener('click', () => {
+		dialog.style.visibility = 'visible';
 		dialog.showModal();
 	  });
 	  closeBtn.addEventListener('click', () => {
+		dialog.style.visibility = 'hidden';
 		dialog.close();
 	  });
 	  const siteSearch = this.querySelector('#site-search');

@@ -203,8 +203,9 @@ body {
 	border: none;
 }
 
-custom-search dialog {
+custom-search dialog{
 	width: 50%;
+	visibility: hidden;
 	display: flex;
 	justify-self: center;
 	align-self: center;
@@ -244,7 +245,6 @@ custom-search dialog {
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
-			transition: 0.3s;
 			a {
 				text-decoration: none;
 				color: black;

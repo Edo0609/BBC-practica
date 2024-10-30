@@ -94,53 +94,47 @@
 		</div>
 	</div>
 
-
 	</div>
 	<custom-search>
-		<dialog hidden>
-		  <button class="close-btn">🗙</button>
-		  <h1>Search</h1>
-		  <input type="search" id="site-search" name="q" />
-	  
-		  <template>
-			<li>
-			  <div class="list-item card">
-				<img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
-				<div class="list-text">
-				  <h5 class="item-title">
-					<a href="article.html?id={id}">
-					  {value}
-					</a>
-				  </h5>
-				  <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
-					reverse chronological order.
-				  </p>
-				  <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
-				</div>
-			  </div>
-			</li>
-		  </template>
-	  
-		  <ul id="search-results">
-		  </ul>
-		</dialog>
-	  </custom-search>
+  <dialog hidden>
+    <button class="close-btn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
 
-	<main>
-		<custom-article>
-		  <article class="custom">
-			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</h1>
-			<relative-time time="1729250766363"></relative-time>
-			<img src="https://placehold.co/768x400/EEE/31343C">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		  </article>
-		</custom-article>
-	  </main>
+    <template>
+      <li>
+        <div class="list-item card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+          <div class="list-text">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+	
+	<div class="article-grid">
+		<div class="article-item">
+			<img src="imgs/gaza.webp"/>
+			<h1 class="title">
+				<a href="article.html?id=6">At least 93 killed and missing in Israeli strike on Gaza, health ministry says</a>
+			</h1>
+			<p class="description">Escalating conflict leaves dozens dead, sparking international calls for a ceasefire and peace negotiations.</p>
+			<relative-time time="Fri Oct 11 2024 09:40:23 GMT+0200" class="time"></relative-time>
+		</div>
+	</div>
 	<script src="script.js"></script>
 </body>
 
